@@ -25,8 +25,8 @@ export default function Navbar() {
   return (
      <nav 
       className={cn(
-        "fixed w-full z-40 transition-all duration-300",
-        isScrolled ? "py-3 bg-white/90 backdrop-blur-md shadow-xs" : "py-5"
+        "fixed w-full z-40 transition-all duration-300 py-3",
+        isScrolled && !open ? "py-1 bg-white/60 backdrop-blur-lg shadow-xs" : " "
       )}
      >
       <div className="container flex items-center justify-between">
@@ -50,12 +50,12 @@ export default function Navbar() {
           onClick={() => setOpen(prev => !prev)} className="sm:hidden p-2 text-foreground z-50"
           aria-label={open ? "Close menu" : "Open menu"}
         >
-          {open ? <X size={24} /> : <MenuIcon size={30} />}{" "}
+          {open ? <X size={30} /> : <MenuIcon size={30} />}{" "}
         </button>
 
         <div
           className={cn(
-            "fixed inset-0 bg-white/95 backdrop-blur-md z-40 flex flex-col items-center justify-center", "transition-all duration-300 md-hidden",
+            "fixed inset-0 bg-white/95 backdrop-blur-md z-40 flex flex-col items-center justify-center", "transition-all duration-300 md:hidden",
             open ? "opacity-95 pointer-events-auto" : "opacity-0 pointer-events-none"
           )}
         >
