@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="container flex items-center justify-between">
         <a href="#hero" className="text-xl font-bold text-primary">
           <span className='relative z-10'>
-            <span className='text-glow text-foreground'>SilviaT</span>
+            <span className='text-glow text-foreground'>SilviaTr</span>
           </span>
         </a>
 
