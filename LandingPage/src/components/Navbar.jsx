@@ -3,7 +3,7 @@ import { MenuIcon, X } from "lucide-react";
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Portafolio', href: '#portafolio' },
   { name: 'Catalogo', href: '#catalogo' },
   { name: 'Certificacion', href: '#certificacion' },
   { name: 'Consulta', href: '#consulta' }
@@ -15,7 +15,7 @@ export default function Navbar() {
 
   useEffect(() => {
     function handleScroll() {
-      setIsScrolled(window.screenY > 10)
+      setIsScrolled(window.scrollY > 10)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -26,7 +26,7 @@ export default function Navbar() {
      <nav 
       className={cn(
         "fixed w-full z-40 transition-all duration-300 py-3",
-        isScrolled && !open ? "py-1 bg-white/60 backdrop-blur-lg shadow-xs" : " "
+        isScrolled && !open ? "py-2 bg-white/60 backdrop-blur-lg shadow-xs" : " "
       )}
      >
       <div className="container flex items-center justify-between">
@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-x-8">
           {navItems.map((item, key) => (
-            <a key={item.key} href={item.href} className="text-foreground hover:text-primary transition-colors duration-300">
+            <a key={item.key} href={item.href} className="text-foreground font-bold hover:text-primary transition-colors duration-300">
               {item.name}
             </a>
           ))}
@@ -50,7 +50,7 @@ export default function Navbar() {
           onClick={() => setOpen(prev => !prev)} className="sm:hidden p-2 text-foreground z-50"
           aria-label={open ? "Close menu" : "Open menu"}
         >
-          {open ? <X size={30} /> : <MenuIcon size={30} />}{" "}
+          {open ? <X size={33} /> : <MenuIcon size={33} />}{" "}
         </button>
 
         <div

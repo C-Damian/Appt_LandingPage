@@ -1,16 +1,61 @@
-# React + Vite
+# Marta Makeup — Landing Page (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a landing page for a makeup artist built with Vite + React and styled with Tailwind CSS. The original template content was replaced with components and a pastel pink palette.
 
-Currently, two official plugins are available:
+Main features added
+- Sticky header with responsive hamburger menu
+- Hero section with social actions and navigation buttons
+- Portfolio with category dropdown and simple carousel
+- Catalogo de servicios (detailed menu with prices)
+- Certificacion (mentorship program details)
+- Consulta (contact form — intended to send via EmailJS)
+- Sticky Consulta button for quick access
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Quick start
+1. Install dependencies:
 
-## React Compiler
+```bash
+npm install
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Tailwind CSS setup (if not already installed):
 
-## Expanding the ESLint configuration
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Note: This project already includes `tailwind.config.cjs` and `postcss.config.cjs`. If you run the commands above, make sure the generated files align with the ones in this repo.
+
+3. Run the dev server:
+
+```bash
+npm run dev
+```
+
+EmailJS integration (sending consultas)
+1. Create an EmailJS account and configure a service and template. Copy the Service ID, Template ID, and Public Key.
+2. Install the EmailJS SDK:
+
+```bash
+npm install emailjs-com
+```
+
+3. Replace the placeholder submit logic in `src/components/Consulta.jsx` with an actual EmailJS call, for example:
+
+```js
+import emailjs from 'emailjs-com'
+
+function send(e) {
+	e.preventDefault()
+	emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+		.then(() => alert('Enviado'))
+}
+```
+
+Next steps & notes
+- Replace placeholder images in `src/assets` with real photos.
+- Hook up WhatsApp/TikTok buttons to actual profiles/links.
+- Improve the carousel to use a library (e.g., Embla Carousel or Swiper) for touch-friendly behavior.
+
+If you want, I can wire EmailJS into the form, add real icons (Hero buttons), and improve the carousel to a more robust implementation.
