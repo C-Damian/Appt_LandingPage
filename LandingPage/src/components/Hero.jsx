@@ -1,7 +1,7 @@
 import { MessageCircle, X } from "lucide-react";
 
 const Items = [
-  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Portafolio', href: '#portafolio' },
   { name: 'Catalogo', href: '#catalogo' },
   { name: 'Certificacion', href: '#certificacion' },
   { name: 'Consulta', href: '#consulta' }
@@ -20,7 +20,7 @@ export default function Hero() {
 
         <div className="md:w-1/2">
           <h1 className="text-5xl font-bold text-blush-900 text-center px-3 font-family header-text">Silvia Trujillo</h1>
-          <h2 className="text-blush-700 text-center mb-4 font-bold text-black">Professional Makeup Artist</h2>
+          <h2 className="text-blush-700 text-center mb-4 font-bold text-black ">Professional Makeup Artist</h2>
 
           <div className="mt-6 flex items-center gap-4 justify-center">
             <button className="flex items-center gap-2">
