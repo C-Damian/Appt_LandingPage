@@ -31,7 +31,7 @@ export default function Navbar() {
      >
       <div className="container flex items-center justify-between">
         <a href="#hero" className="text-xl font-bold text-primary">
-          <span className='ml-15 relative z-10'>
+          <span className=' relative z-10'>
             <span className='text-center text-foreground'>
               <img src="https://lx0yjezcc8bvqfbv.public.blob.vercel-storage.com/SILVIA%20TRUJILLO.png" alt="Logo" className="w-62 h-12 inline-block mr-2 mb-1" />
             </span>
