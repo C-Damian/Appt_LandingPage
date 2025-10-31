@@ -1,16 +1,16 @@
 const services = {
   Glam: [
-    { name: 'Glam Full', price: '$120k', desc: 'Full glam look with lashes' },
-    { name: 'Glam Light', price: '$80k', desc: 'Soft glam for events' }
+    { name: 'Glam Full', price: '$00k', desc: 'Full glam look with lashes' },
+    { name: 'Glam Light', price: '$00k', desc: 'Soft glam for events' }
   ],
   Cabello: [
-    { name: 'Peinado Básico', price: '$60k', desc: 'Peinado elegante' }
+    { name: 'Peinado Básico', price: '$00k', desc: 'Peinado elegante' }
   ],
   Quinceanera: [
-    { name: 'Quince Full', price: '$200k', desc: 'Full service for quinceañera' }
+    { name: 'Quince Full', price: '$00k', desc: 'Full service for quinceañera' }
   ],
   Bodas: [
-    { name: 'Boda Bridal', price: '$180k', desc: 'On-site bridal makeup' }
+    { name: 'Boda Bridal', price: '$00k', desc: 'On-site bridal makeup' }
   ]
 }
 

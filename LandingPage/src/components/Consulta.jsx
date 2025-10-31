@@ -17,7 +17,7 @@ export default function Consulta() {
 
   return (
     <section id="consulta" className="py-10 bg-blush-50">
-      <div className="container-max">
+      <div className="container-max px-6 pb-10 text-center">
         <h3 className="text-2xl font-semibold text-blush-900">Consulta</h3>
         <p className="text-blush-700 mt-2">Rellena el formulario y te contactaremos con una cotización.</p>
 
@@ -35,7 +35,7 @@ export default function Consulta() {
 
           <div className="col-span-1 md:col-span-2">
             <button type="submit" className="px-5 py-2 btn-primary">
-              {status === 'sending' ? 'Enviando...' : status === 'sent' ? 'Enviado' : 'Enviar Consulta'}
+              {status === 'sending' ? 'Enviando...' : status === 'sent' ? 'Enviado! Te Vamos a Contactar Para Confirmar ♥' : 'Enviar Consulta'}
             </button>
           </div>
         </form>

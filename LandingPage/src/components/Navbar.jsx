@@ -25,14 +25,16 @@ export default function Navbar() {
   return (
      <nav 
       className={cn(
-        "fixed w-full z-40 transition-all duration-300 py-3",
-        isScrolled && !open ? "py-2 bg-white/60 backdrop-blur-lg shadow-xs" : " "
+        "fixed w-full z-40 transition-all duration-300 py-2",
+        isScrolled && !open ? "py-1 bg-white/60 backdrop-blur-lg shadow-xs" : " "
       )}
      >
       <div className="container flex items-center justify-between">
         <a href="#hero" className="text-xl font-bold text-primary">
-          <span className='relative z-10'>
-            <span className='text-glow text-foreground'>SilviaTr</span>
+          <span className='ml-15 relative z-10'>
+            <span className='text-center text-foreground'>
+              <img src="https://lx0yjezcc8bvqfbv.public.blob.vercel-storage.com/SILVIA%20TRUJILLO.png" alt="Logo" className="w-62 h-12 inline-block mr-2 mb-1" />
+            </span>
           </span>
         </a>
 
