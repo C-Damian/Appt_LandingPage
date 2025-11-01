@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
      <nav 
       className={cn(
-        "fixed w-full z-40 transition-all duration-300 pt-1",
+        "fixed w-full z-40 transition-all duration-300 pt-",
         isScrolled && !open ? "py-1 bg-white/60 backdrop-blur-lg shadow-xs" : " "
       )}
      >
