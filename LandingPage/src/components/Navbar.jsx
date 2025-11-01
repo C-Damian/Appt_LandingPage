@@ -32,7 +32,7 @@ export default function Navbar() {
        <div className="container flex items-center justify-between px-4 md:px-8"> 
         <a 
           href="#hero" 
-          className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:ml-auto flex justify-center md:justify-end"
+          className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:ml-auto flex justify-center md:justify-end sm:translate-x-[-160%]"
         >
           <img 
             src="https://lx0yjezcc8bvqfbv.public.blob.vercel-storage.com/SILVIA%20TRUJILLO.png" 
@@ -42,7 +42,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden sm:flex items-center gap-x-8 flex-1 md:translate-x-0 justify-end">
+        <div className="hidden sm:flex items-center gap-x-8 flex-1 md:translate-x-0 md:text-xl justify-end">
           {navItems.map((item, key) => (
             <a key={item.key} href={item.href} className="text-foreground font-bold hover:text-primary transition-colors duration-300">
               {item.name}

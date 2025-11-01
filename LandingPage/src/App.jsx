@@ -1,6 +1,5 @@
 import Header from './components/Navbar'
 import Hero from './components/Hero'
-import Portfolio from './components/Portfolio'
 import Catalogo from './components/Catalogo'
 import Certificacion from './components/Certificacion'
 import Consulta from './components/Consulta'

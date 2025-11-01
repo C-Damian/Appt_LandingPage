@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
 
         <div className="md:w-1/2">
-          <h1 className="text-4xl font-bold text-blush-900 text-center px-3 font-family header-text">Silvia Trujillo</h1>
+          <h1 className="text-4xl font-bold text-blush-900 text-center px-3 font-family header-text md:text-7xl">Silvia Trujillo</h1>
           <h3 className="text-blush-700 text-sm text-center mb-1 font-bold text-black ">Professional Makeup Artist</h3>
 
           <div className="mt-2 flex items-center gap-4 justify-center">
@@ -35,7 +35,7 @@ export default function Hero() {
             </button>
           </div>
 
-          <div className="mt-2 grid grid-cols-2 px-4 gap-x-3 gap-y-2">
+          <div className="mt-2 grid grid-cols-2 px-4 gap-x-3 gap-y-2 md:gap-6 md:mt-6">
             {Items.map((item, key) => (
               <a key={item.key} href={item.href} className="new-button block text-center py-2 inset-ring-4 inset-ring-foreground">
                 {item.name}

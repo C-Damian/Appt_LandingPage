@@ -1,16 +1,21 @@
 const services = {
   Glam: [
-    { name: 'Glam Full', price: '$00k', desc: 'Full glam look with lashes' },
-    { name: 'Glam Light', price: '$00k', desc: 'Soft glam for events' }
+    { name: 'Maquillaje Social', price: '$00k', desc: 'Maquillaje completo para eventos sociales.' },
+    { name: 'Maquillaje Artístico', price: '$00k', desc: 'Looks creativos y temáticos para producciones o eventos.' }
   ],
-  Cabello: [
-    { name: 'Peinado Básico', price: '$00k', desc: 'Peinado elegante' }
-  ],
-  Quinceanera: [
-    { name: 'Quince Full', price: '$00k', desc: 'Full service for quinceañera' }
+  Quinceañera: [
+    { name: 'Maquillaje Quinceañera', price: '$00k', desc: 'Servicio completo de maquillaje para la celebración de 15 años.' }
   ],
   Bodas: [
-    { name: 'Boda Bridal', price: '$00k', desc: 'On-site bridal makeup' }
+    { name: 'Maquillaje Novia (Boda)', price: '$00k', desc: 'Servicio premium de maquillaje nupcial, usualmente a domicilio.' }
+  ],
+  Cabello: [
+    { name: 'Peinado Recogido', price: '$00k', desc: 'Peinado elegante con el cabello totalmente recogido.' },
+    { name: 'Peinado Semi-recogido', price: '$00k', desc: 'Estilo versátil con parte del cabello recogido.' },
+    { name: 'Peinado Ondas', price: '$00k', desc: 'Creación de ondas sueltas o marcadas.' },
+    { name: 'Peinado Trenzado', price: '$00k', desc: 'Diseño de trenzas modernas o clásicas.' },
+    { name: 'Peinado Planchado', price: '$00k', desc: 'Alisado perfecto con plancha profesional.' },
+    { name: 'Repolarización Capilar', price: '$00k', desc: 'Tratamiento intensivo de nutrición y reparación para el cabello.' }
   ]
 }
 
