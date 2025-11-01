@@ -25,25 +25,24 @@ export default function Navbar() {
   return (
      <nav 
       className={cn(
-        "fixed w-full z-40 transition-all duration-300 pt-",
-        isScrolled && !open ? "py-1 bg-white/60 backdrop-blur-lg shadow-xs" : " "
+        "fixed w-full z-40 transition-all duration-300 py-2",
+        isScrolled && !open ? "py-2 bg-white/60 backdrop-blur-lg shadow-xs" : " "
       )}
      >
-      <div className="container flex items-center justify-between">
-        <a href="#hero" className="absolute left-1/2 -translate-x-1/2">
-          <span className='relative'>
-            <div className='flex justify-center'>
-              <img 
-                src="https://lx0yjezcc8bvqfbv.public.blob.vercel-storage.com/SILVIA%20TRUJILLO.png" 
-                alt="Logo" 
-                className="w-60 h-10" 
-              />
-            </div>
-          </span>
+       <div className="container flex items-center justify-between px-4 md:px-8"> 
+        <a 
+          href="#hero" 
+          className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:ml-auto flex justify-center md:justify-end"
+        >
+          <img 
+            src="https://lx0yjezcc8bvqfbv.public.blob.vercel-storage.com/SILVIA%20TRUJILLO.png" 
+            alt="Logo" 
+            className="h-10 w-auto md:h-12 lg:h-14 object-contain"
+          />
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-x-8 flex-1">
+        <div className="hidden sm:flex items-center gap-x-8 flex-1 md:translate-x-0 justify-end">
           {navItems.map((item, key) => (
             <a key={item.key} href={item.href} className="text-foreground font-bold hover:text-primary transition-colors duration-300">
               {item.name}
