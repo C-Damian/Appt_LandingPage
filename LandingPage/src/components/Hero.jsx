@@ -13,7 +13,7 @@ export default function Hero() {
     <section id="hero" className="hero-bg">
       <div className="container-max py-12 flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/2 flex justify-center">
-          <div className="w-full max-w-sm card-soft p-4">
+          <div className="w-[80%] max-w-sm card-soft p-4"> 
             <img src="https://lx0yjezcc8bvqfbv.public.blob.vercel-storage.com/Hero.jpg" alt="artist" className="mt-4 w-full rounded-2xl shadow-2xl/50" />
           </div>
         </div>
