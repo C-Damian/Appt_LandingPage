@@ -19,8 +19,8 @@ export default function Hero() {
         </div>
 
         <div className="md:w-1/2">
-          <h1 className="text-5xl font-bold text-blush-900 text-center px-3 font-family header-text">Silvia Trujillo</h1>
-          <h2 className="text-blush-700 text-center mb-4 font-bold text-black ">Professional Makeup Artist</h2>
+          <h1 className="text-3xl font-bold text-blush-900 text-center px-3 font-family header-text">Silvia Trujillo</h1>
+          <h3 className="text-blush-700 text-sm text-center mb-4 font-bold text-black ">Professional Makeup Artist</h3>
 
           <div className="mt-6 flex items-center gap-4 justify-center">
             <button className="flex items-center gap-2">
