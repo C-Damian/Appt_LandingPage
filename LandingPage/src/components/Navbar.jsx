@@ -30,16 +30,20 @@ export default function Navbar() {
       )}
      >
       <div className="container flex items-center justify-between">
-        <a href="#hero" className="text-xl font-bold text-primary">
-          <span className='relative z-10'>
-            <div className='text-center md:w-1/2 text-foreground'>
-              <img src="https://lx0yjezcc8bvqfbv.public.blob.vercel-storage.com/SILVIA%20TRUJILLO.png" alt="Logo" className="w-62 h-12 inline-block mr-2 mb-1" />
+        <a href="#hero" className="flex-1 text-center">
+          <span className='relative'>
+            <div className='flex justify-center'>
+              <img 
+                src="https://lx0yjezcc8bvqfbv.public.blob.vercel-storage.com/SILVIA%20TRUJILLO.png" 
+                alt="Logo" 
+                className="w-62 h-12" 
+              />
             </div>
           </span>
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-x-8">
+        <div className="hidden md:flex items-center gap-x-8 flex-1">
           {navItems.map((item, key) => (
             <a key={item.key} href={item.href} className="text-foreground font-bold hover:text-primary transition-colors duration-300">
               {item.name}
@@ -49,7 +53,8 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <button
-          onClick={() => setOpen(prev => !prev)} className="sm:hidden py-2 text-foreground z-50"
+          onClick={() => setOpen(prev => !prev)} 
+          className="sm:hidden py-2 text-foreground z-50"
           aria-label={open ? "Close menu" : "Open menu"}
         >
           {open ? <X size={33} /> : <MenuIcon size={33} />}{" "}
@@ -57,7 +62,8 @@ export default function Navbar() {
 
         <div
           className={cn(
-            "fixed inset-0 bg-white/95 backdrop-blur-md z-40 flex flex-col items-center justify-center", "transition-all duration-300 md:hidden",
+            "fixed inset-0 bg-white/95 backdrop-blur-md z-40 flex flex-col items-center justify-center", 
+            "transition-all duration-300 md:hidden",
             open ? "opacity-95 pointer-events-auto" : "opacity-0 pointer-events-none"
           )}
         >
