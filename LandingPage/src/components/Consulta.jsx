@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function Consulta() {
-  const [form, setForm] = useState({ name: '', email: '', date: '', service: '', notes: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', date: '', service: '', notes: '' })
   const [status, setStatus] = useState(null)
 
   function handleChange(e) {
@@ -22,13 +22,14 @@ export default function Consulta() {
         <p className="text-blush-700 mt-2">Rellena el formulario y te contactaremos con una cotización.</p>
 
         <form onSubmit={handleSubmit} className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
-          <input required="true" name="name" value={form.name} onChange={handleChange} placeholder="Nombre" className="p-3 rounded-lg border bg-white" />
-          <input required="true" name="email" type="email" value={form.email} onChange={handleChange} placeholder="Email" className="p-3 rounded-lg border bg-white" />
-          <input required="true" name="phone" value={form.phone} onChange={handleChange} placeholder="Teléfono" className="p-3 rounded-lg border bg-white" />
-          <input required="true" name="date" placeholder="Fecha del servicio" type="date" value={form.date} onChange={handleChange} className="p-3 rounded-lg border bg-white" />
-          <select required="true" name="service" value={form.service} onChange={handleChange} className="p-3 rounded-lg border bg-white">
+          <input required name="name" value={form.name} onChange={handleChange} placeholder="Nombre" className="p-3 rounded-lg border bg-white" />
+          <input required name="email" type="email" value={form.email} onChange={handleChange} placeholder="Email" className="p-3 rounded-lg border bg-white" />
+          <input required name="phone" value={form.phone} onChange={handleChange} placeholder="Teléfono" className="p-3 rounded-lg border bg-white" />
+          <input required name="date" placeholder="Fecha del servicio" type="date" value={form.date} onChange={handleChange} className="p-3 rounded-lg border bg-white" />
+          <select required name="service" value={form.service} onChange={handleChange} className="p-3 rounded-lg border bg-white">
             <option value="">Selecciona servicio</option>
             <option value="Glam">Glam</option>
+            <option value="Cabello">Peinados</option>
             <option value="Bodas">Bodas</option>
             <option value="Quinceanera">Quinceanera</option>
           </select>
